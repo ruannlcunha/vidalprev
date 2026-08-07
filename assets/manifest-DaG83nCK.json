@@ -1,0 +1,25 @@
+{
+    "theme_color": "#2596be",
+    "background_color": "#ffffff",
+    "id": "https://ruannlcunha.github.io/vidalprev/",
+    "start_url": "https://ruannlcunha.github.io/vidalprev/",
+    "name": "VidalPrev",
+    "short_name": "VidalPrev",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+        "src": "https://ruannlcunha.github.io/vidalprev/icon144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "https://ruannlcunha.github.io/vidalprev/icon512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+        }
+    ],
+    "display": "fullscreen",
+    "orientation": "landscape"
+  }
