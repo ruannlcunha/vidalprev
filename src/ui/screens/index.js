@@ -1,0 +1,5 @@
+export { RootScreen } from "./root/root.screen"
+export { HomeScreen } from "./home/home.screen"
+export { ClientsScreen } from "./clients/clients.screen"
+export { ServicesScreen } from "./services/services.screen"
+export { ContactScreen } from "./contact/contact.screen"

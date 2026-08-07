@@ -1,0 +1,36 @@
+.vidalprev-main-footer {
+    width: 100%;
+    background-color: #010203;
+    border-top: 1px solid rgba(211, 47, 47, 0.3);
+    margin-top: 15px;
+    color: #B0B5C0;
+    font-size: 14px;
+}
+
+.footer {
+    margin: 20px 0;
+    margin-left: 10%;
+    font-size: 13px;
+    color: #707684;
+}
+
+.attribution a {
+    color: #A0A6B2;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.attribution a:hover {
+    color: #D32F2F;
+}
+
+
+@media (max-width: 768px) {
+    .vidalprev-main-footer {
+        margin-top: 40px;
+    }
+
+    .footer {
+    margin-left: 5%;
+    }
+}

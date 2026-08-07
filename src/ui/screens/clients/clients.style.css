@@ -1,0 +1,102 @@
+.clients-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #030305ec;
+    color: #c7c7c7;
+}
+
+.clients-screen .container-main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.clients-screen .container-main h1 {
+    color: white;
+    font-size: 3.6rem;
+    margin: 2.8rem 0;
+    text-align: center;
+}
+
+.clients-screen .container-main .clients-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.clients-screen .container-main .clients-list .client-card {
+    margin: 5px;
+    width: 15%;
+    height: 7vw;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-screen .container-main .clients-list .client-card img {
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.clients-screen .container-main .projects-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.clients-screen .container-main .projects-list .project-card {
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(211, 47, 47, 0.8);
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.8);
+    margin: 10px;
+    width: 30%;
+    height: 15vw;
+    padding: 5px;
+}
+
+.clients-screen .container-main .projects-list .project-card img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .clients-screen .container-main h1 {
+        font-size: 2.8rem;
+    }
+
+    .clients-screen .container-main .clients-list .client-card {
+        width: 25%;
+        height: 14vw;
+    }
+
+    .clients-screen .container-main .projects-list .project-card {
+        margin: 5px;
+        width: 75%;
+        height: 40vw;
+        padding: 5px;
+        box-shadow: 0 0 10px rgba(211, 47, 47, 0.8);
+    }
+
+}

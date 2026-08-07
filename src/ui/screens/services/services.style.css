@@ -1,0 +1,123 @@
+.services-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #030305ec;
+    color: #FFFFFF;
+}
+
+.services-screen .container-main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.services-screen .container-main .services-section {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-screen .container-main .services-section h1 {
+    color: white;
+    font-size: 4.2rem;
+    margin: 2.8rem 0;
+    text-align: center;
+}
+
+.services-screen .container-main .services-section .services-list {
+    list-style: none;
+    height: 95%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-screen .container-main .services-section .services-list .service-card {
+    margin: 2%;
+    height: 90%;
+    width: 20%;
+    background-color: #010203;
+    border: 2px solid rgba(211, 47, 47, 0.8);
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.8);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-screen .container-main .services-section .services-list .service-card h2 {
+    width: 95%;
+    color: white;
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    text-align: center;
+
+}
+
+.services-screen .container-main .services-section .services-list .service-card img {
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.services-screen .container-main .services-section .services-list .service-card .service-icon {
+    margin-top: 0;
+    border-radius: 0;
+    width: 4vw;
+    height: 4vw;
+    margin-top: -3vw;
+    margin-bottom: -1vw;
+    position: relative;
+}
+
+.services-screen .container-main .services-section .services-list .service-card button {
+    margin-top: 25%;
+    font-size: 2.8rem;
+}
+
+@media (max-width: 768px) {
+
+    .services-screen .container-main .services-section {
+        height: auto;
+    }
+
+    .services-screen .container-main .services-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .services-screen .container-main .services-section .services-list {
+        height: auto;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .services-screen .container-main .services-section .services-list .service-card {
+        margin: 5%;
+        width: 65%;
+    }
+
+    .services-screen .container-main .services-section .services-list .service-card .service-icon {
+        width: 13vw;
+        height: 13vw;
+        margin-top: -8vw;
+        margin-bottom: -5vw;
+        position: relative;
+    }
+
+    .services-screen .container-main .services-section .services-list .service-card button {
+        margin-top: 25%;
+        margin-bottom: 15%;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,164 @@
+.contact-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #030305ec;
+    color: #FFFFFF;
+}
+
+.contact-screen .container-main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.contact-screen .container-main .main-sections {
+    width: 100%;
+    min-height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-screen .container-main .main-sections section {
+    width: 45%;
+}
+
+.contact-screen .container-main .main-sections .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-screen .container-main .main-sections .left-section .faq-list {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-screen .container-main .main-sections .left-section .faq-item {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding: 16px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-screen .container-main .main-sections .left-section .faq-item:hover .question-text {
+    color: #D32F2F;
+}
+
+.contact-screen .container-main .main-sections .left-section .faq-question {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-screen .container-main .main-sections .left-section .triangle-icon {
+    font-size: 2.4rem;
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.contact-screen .container-main .main-sections .left-section .triangle-icon.open {
+    transform: rotate(90deg);
+    color: #D32F2F;
+}
+
+.contact-screen .container-main .main-sections .left-section .question-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.contact-screen .container-main .main-sections .left-section .faq-answer {
+    padding-top: 12px;
+    padding-left: 26px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #d0d4dc;
+}
+
+.contact-screen .container-main .main-sections section h1 {
+    color: white;
+    font-size: 4.2rem;
+    margin: 2.8rem 0;
+    text-align: center;
+}
+
+.contact-screen .container-main .main-sections .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-screen .container-main .main-sections .right-section .contact-card {
+    margin: 10px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-screen .container-main .main-sections .right-section .contact-card img {
+    height: 4vw;
+    width: 4vw;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #D32F2F;
+}
+
+.contact-screen .container-main .main-sections .right-section .contact-card h2 {
+    color: white;
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 0 1.6rem;
+}
+
+.contact-screen .clickable {
+    transition: all 0.3s;
+}
+
+.contact-screen .clickable:hover {
+    background-color: rgba(0, 0, 0, 0.89);
+    opacity: 75%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    .contact-screen .container-main .main-sections {
+        min-height: auto;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    .contact-screen .container-main .main-sections section {
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-screen .container-main .main-sections section h1 {
+        font-size: 2.8rem;
+    }
+
+    .contact-screen .container-main .main-sections .right-section .contact-card img {
+        height: 13vw;
+        width: 13vw;
+        padding: 10px;
+    }
+
+    .contact-screen .container-main .main-sections .right-section .contact-card h2 {
+        font-size: 2rem;
+        margin: 0 1.6rem;
+    }
+}

@@ -1,0 +1,38 @@
+.chat-container {
+    position: fixed;
+    bottom: 3vh;
+    right: 4vh;
+    z-index: 20;
+}
+
+.chat-icon-container {
+    background-color: #D32F2F;
+    width: 8vh;
+    height: 8vh;
+    border: solid 2px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chat-icon-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(211, 47, 47, 0.8);
+}
+
+.chat-icon-container img {
+    max-width: 30px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .chat-container {
+        bottom: 3vh;
+        right: 3vh;
+    }
+}

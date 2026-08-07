@@ -1,0 +1,118 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+.vidalprev-header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 0 15px rgba(245, 51, 51, 0.904); */
+    background-color: #130609;
+    position: relative;
+    z-index: 10;
+    padding: 0 10%;
+}
+
+.logo-container {
+    height: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo-img {
+    height: 100%;
+}
+
+.logo-container img {
+    height: 100%;
+    width: auto;
+}
+
+.logo-container .logo-text {
+    margin-left: 15px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.logo-container .logo-text h1 {
+    font-size: 3.2rem;
+}
+
+.logo-container .logo-text h2 {
+    border-top: solid 1px white;
+    margin-top: -5px;
+    font-size: 1.2rem;
+}
+
+.vidalprev-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.vidalprev-nav li h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.vidalprev-nav li.active h2,
+.vidalprev-nav li h2:hover {
+    color: #D32F2F;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 2.8rem;
+    cursor: pointer;
+    z-index: 20;
+}
+
+@media (max-width: 768px) {
+    .vidalprev-header {
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .vidalprev-nav {
+        position: absolute;
+        right: 0;
+        top: 9vh;
+        width: 35vw;
+    }
+
+    .vidalprev-nav ul {
+        flex-direction: column;
+        gap: 20px;
+        background-color: rgba(5, 6, 10, 0.95);
+        padding: 30px 20px;
+        border-radius: 0 0 0 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: none;
+        border-top: none;
+        display: none;
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .vidalprev-nav.mobile-open ul {
+        display: flex;
+    }
+}
