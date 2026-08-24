@@ -1,6 +1,62 @@
-import { IMG, SERVICES_IMG } from "../../../constants";
+import { IMG, ICONS, SERVICES_IMG } from "../../../constants";
 import { ButtonPrimary, ChatButton, ContainerScreen, Footer, Header } from "../../components";
 import "./services.style.css";
+
+const SERVICES = [
+    {
+        id: 1,
+        title: "PPCI",
+        description: "Projeto de Prevenção e Combate a Incêndio.",
+        img: SERVICES_IMG.SERVICE_1,
+        icon: ICONS.CHECKLIST,
+    },
+    {
+        id: 2,
+        title: "LAUDOS TÉCNICOS",
+        description: "Emissão de laudos e ARTs com responsabilidade técnica.",
+        img: SERVICES_IMG.SERVICE_1,
+        icon: ICONS.PAPERS,
+    },
+    {
+        id: 3,
+        title: "EXTINTORES",
+        description: "Novos e recargas com certificados e garantia.",
+        img: SERVICES_IMG.SERVICE_1,
+        icon: ICONS.EXTINGUISHER,
+    },
+    {
+        id: 4,
+        title: "TREINAMENTOS RT15",
+        description: "Treinamentos práticos e teóricos conforme Norma RT15.",
+        img: SERVICES_IMG.SERVICE_1,
+        icon: ICONS.TRAINING,
+    },
+    {
+        id: 5,
+        title: "ALARMES DE INCÊNDIO",
+        description: "Instalação, manutenção e adequação de sistemas.",
+        img: SERVICES_IMG.SERVICE_1,
+        icon: ICONS.ALARM,
+    },
+    {
+        id: 6,
+        title: "HIDRANTES E SPK",
+        description: "Instalação e manutenção de hidrantes e sistemas de chuveiros automáticos (SPK).",
+        img: SERVICES_IMG.SERVICE_1,
+        icon: ICONS.HYDRANT,
+    },
+]
+
+function ServiceCard({ service }) {
+    return (
+        <div className="service-card">
+            <img src={service.icon.src} alt={service.icon.alt} className="service-icon" />
+            <img src={service.img.src} alt={service.img.alt} />
+            <h2>{service.title}</h2>
+            <p>{service.description}</p>
+        </div>
+    )
+}
 
 export function ServicesScreen() {
     return (
@@ -11,24 +67,11 @@ export function ServicesScreen() {
                     <section className="services-section">
                         <h1>NOSSOS SERVIÇOS</h1>
                         <ul className="services-list">
-                            <div className="service-card">
-                                <img src={IMG.EXTINGUISHER.src} alt={IMG.EXTINGUISHER.alt} className="service-icon"/>
-                                <img src={SERVICES_IMG.SERVICE_1.src} alt={SERVICES_IMG.SERVICE_1.alt} />
-                                <h2>VENDA DE EXTINTORES</h2>
-                                <ButtonPrimary>SAIBA MAIS</ButtonPrimary>
-                            </div>
-                            <div className="service-card">
-                                <img src={IMG.WRENCH.src} alt={IMG.WRENCH.alt} className="service-icon"/>
-                                <img src={SERVICES_IMG.SERVICE_1.src} alt={SERVICES_IMG.SERVICE_1.alt} />
-                                <h2>MANUTENÇÃO E RECARGA</h2>
-                                <ButtonPrimary>SAIBA MAIS</ButtonPrimary>
-                            </div>
-                            <div className="service-card">
-                                <img src={IMG.PAPERS.src} alt={IMG.PAPERS.alt} className="service-icon"/>
-                                <img src={SERVICES_IMG.SERVICE_1.src} alt={SERVICES_IMG.SERVICE_1.alt} />
-                                <h2>PROJETOS E LAUDOS TÉCNICOS</h2>
-                                <ButtonPrimary>SAIBA MAIS</ButtonPrimary>
-                            </div>
+                            {
+                                SERVICES.map(service => {
+                                    return <ServiceCard service={service}/>
+                                })
+                            }
                         </ul>
                     </section>
                     <Footer />

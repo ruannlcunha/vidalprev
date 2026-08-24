@@ -20,8 +20,20 @@
 .clients-screen .container-main h1 {
     color: white;
     font-size: 3.6rem;
-    margin: 2.8rem 0;
+    margin: 3rem 0;
     text-align: center;
+}
+
+.clients-screen .container-main h2 {
+    margin: 0;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: solid 2px lightgray;
+    color: lightgray;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
 }
 
 .clients-screen .container-main .clients-list {
@@ -35,8 +47,8 @@
 
 .clients-screen .container-main .clients-list .client-card {
     margin: 5px;
-    width: 15%;
-    height: 7vw;
+    width: 25%;
+    height: 10vw;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -86,9 +98,15 @@
         font-size: 2.8rem;
     }
 
+    .clients-screen .container-main h2 {
+        font-size: 1.8rem;
+        width: 75%;
+        border-top: solid 1px lightgray;
+    }
+
     .clients-screen .container-main .clients-list .client-card {
-        width: 25%;
-        height: 14vw;
+        width: 45%;
+        height: 20vw;
     }
 
     .clients-screen .container-main .projects-list .project-card {

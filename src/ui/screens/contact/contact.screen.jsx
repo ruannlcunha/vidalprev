@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { IMG } from "../../../constants";
-import { INSTAGRAM_CONTACT, WHATSAPP_CONTACT } from "../../../constants/contact.constant";
+import { IMG, ICONS } from "../../../constants";
+import { EMAIL_CONTACT, INSTAGRAM_CONTACT, WHATSAPP_CONTACT_1, WHATSAPP_CONTACT_2 } from "../../../constants/contact.constant";
 import { ButtonPrimary, ChatButton, ContainerScreen, Footer, Header } from "../../components";
 import "./contact.style.css";
 
@@ -32,7 +32,8 @@ const faqItems = [
 ];
 
 export function ContactScreen() {
-    const WHATSAPP_URL = `https://wa.me/${WHATSAPP_CONTACT.NUMBER}?text=${encodeURIComponent(WHATSAPP_CONTACT.DEFAULT_MESSAGE)}`
+    const WHATSAPP_URL_1 = `https://wa.me/${WHATSAPP_CONTACT_1.NUMBER}?text=${encodeURIComponent(WHATSAPP_CONTACT_1.DEFAULT_MESSAGE)}`
+    const WHATSAPP_URL_2 = `https://wa.me/${WHATSAPP_CONTACT_2.NUMBER}?text=${encodeURIComponent(WHATSAPP_CONTACT_2.DEFAULT_MESSAGE)}`
     const [openIndex, setOpenIndex] = useState(null);
 
     function handleToggleAccordion(index) {
@@ -69,17 +70,21 @@ export function ContactScreen() {
                         </section>
                         <section className="right-section">
                             <h1>ENTRE EM CONTATO</h1>
-                            <a className="contact-card clickable" target="_blanked" href={WHATSAPP_URL}>
-                                <img src={IMG.WHATSAPP.src} alt={IMG.WHATSAPP.alt} />
+                            <a className="contact-card clickable" target="_blanked" href={WHATSAPP_URL_1}>
+                                <img src={ICONS.WHATSAPP.src} alt={ICONS.WHATSAPP.alt} />
+                                <h2>{"(51) 98948-9245"}</h2>
+                            </a>
+                            <a className="contact-card clickable" target="_blanked" href={WHATSAPP_URL_2}>
+                                <img src={ICONS.WHATSAPP.src} alt={ICONS.WHATSAPP.alt} />
                                 <h2>{"(51) 98948-9245"}</h2>
                             </a>
                             <a className="contact-card clickable" target="_blanked" href={INSTAGRAM_CONTACT.URL}>
-                                <img src={IMG.INSTAGRAM.src} alt={IMG.INSTAGRAM.alt} />
-                                <h2>@vidalprev.extintores</h2>
+                                <img src={ICONS.INSTAGRAM.src} alt={ICONS.INSTAGRAM.alt} />
+                                <h2>{INSTAGRAM_CONTACT.NICKNAME}</h2>
                             </a>
                             <div className="contact-card">
-                                <img src={IMG.MAIL.src} alt={IMG.MAIL.alt} />
-                                <h2>vidalprev@gmail.com</h2>
+                                <img src={ICONS.MAIL.src} alt={ICONS.MAIL.alt} />
+                                <h2>{EMAIL_CONTACT.MAIL}</h2>
                             </div>
                         </section>
                     </div>

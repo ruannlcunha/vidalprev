@@ -3,18 +3,12 @@ import { ButtonPrimary, ChatButton, ContainerScreen, Footer, Header } from "../.
 import "./clients.style.css";
 
 const CLIENTS = [
-    {id: 1, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 2, img: CLIENTS_IMG.PERNAMBUCANAS},
+    {id: 1, img: CLIENTS_IMG.SANTANDER},
+    {id: 2, img: CLIENTS_IMG.KLEIN_VILLE},
     {id: 3, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 4, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 5, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 6, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 7, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 8, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 9, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 10, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 11, img: CLIENTS_IMG.PERNAMBUCANAS},
-    {id: 12, img: CLIENTS_IMG.PERNAMBUCANAS},
+    {id: 4, img: CLIENTS_IMG.HABIBS},
+    {id: 5, img: CLIENTS_IMG.MABY},
+    {id: 6, img: CLIENTS_IMG.PULSE}
 ]
 
 const PROJECTS = [
@@ -48,6 +42,9 @@ export function ClientsScreen() {
                             })
                         }
                     </ul>
+                    <h2>E muitos outros clientes atendidos em todo o <span style={{ color: "#D32F2F" }}>Rio Grande do Sul</span></h2>
+
+
                     <h1>PORTFÓLIO DE PROJETOS</h1>
                     <ul className="projects-list">
                         {

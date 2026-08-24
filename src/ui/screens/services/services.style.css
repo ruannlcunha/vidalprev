@@ -19,7 +19,6 @@
 
 .services-screen .container-main .services-section {
     width: 100%;
-    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,18 +33,17 @@
 
 .services-screen .container-main .services-section .services-list {
     list-style: none;
-    height: 95%;
-    width: 90%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 75%;
+    flex-wrap: wrap;
 }
 
 .services-screen .container-main .services-section .services-list .service-card {
     margin: 2%;
-    height: 90%;
-    width: 20%;
+    height: 55vh;
+    width: 20vw;
     background-color: #010203;
     border: 2px solid rgba(211, 47, 47, 0.8);
     box-shadow: 0 0 15px rgba(211, 47, 47, 0.8);
@@ -58,11 +56,18 @@
 
 .services-screen .container-main .services-section .services-list .service-card h2 {
     width: 95%;
+    height: 20%;
     color: white;
     font-size: 2.8rem;
-    margin: 2rem 0;
+    margin-top: 2rem;
     text-align: center;
+}
 
+.services-screen .container-main .services-section .services-list .service-card p {
+    color: white;
+    width: 90%;
+    font-size: 2.4rem;
+    text-align: center;
 }
 
 .services-screen .container-main .services-section .services-list .service-card img {
@@ -105,6 +110,16 @@
     .services-screen .container-main .services-section .services-list .service-card {
         margin: 5%;
         width: 65%;
+        height: 45vh;
+    }
+
+    .services-screen .container-main .services-section .services-list .service-card h2 {
+        height: auto;
+    }
+
+    .services-screen .container-main .services-section .services-list .service-card p {
+        font-size: 2rem;
+        margin-top: 1rem;
     }
 
     .services-screen .container-main .services-section .services-list .service-card .service-icon {
